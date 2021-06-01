@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/ensah/config/AppConfig.java=UTF-8
+encoding//src/main/java/com/ensah/core/bo/Absence.java=UTF-8
+encoding//src/main/java/com/ensah/core/bo/Message.java=UTF-8
+encoding//src/main/java/com/ensah/genericdao/HibernateSpringGenericDaoImpl.java=UTF-8
