@@ -95,7 +95,7 @@ public class AppConfig implements WebMvcConfigurer {
 		sessionFactory.setHibernateProperties(hibernateProperties());
 
 		// TODO: Indiquer vos classes annotées par @Entity ici
-		sessionFactory.setAnnotatedClasses(Person.class, UserAccount.class, Role.class);
+		sessionFactory.setAnnotatedClasses(Etudiant.class, Absence.class);
 
 		// Tracer dans le journal pour des raisons juste de débougage
 		// que la session Factory a été bien crée
@@ -131,7 +131,7 @@ public class AppConfig implements WebMvcConfigurer {
 
 		// TODO : A mettre à jour en fonction de votre base de données
 		dataSource.setDriverClassName("org.mariadb.jdbc.Driver"); // Driver
-		dataSource.setUrl("jdbc:mysql://localhost:3306/dbTestCours"); // L'url d'accès à la base de données
+		dataSource.setUrl("jdbc:mysql://localhost:3306/miniProjet"); // L'url d'accès à la base de données
 		dataSource.setUsername("root"); // login
 		dataSource.setPassword(""); // mot de passe
 		return dataSource;
@@ -187,10 +187,10 @@ public class AppConfig implements WebMvcConfigurer {
 	// personnalisé pour la
 	// redirection après authenitication avec succès
 	//
-	@Bean // nécessaire car c'est Spring qui créer automatiquement cette classe de type
+	//@Bean // nécessaire car c'est Spring qui créer automatiquement cette classe de type
 			// MySimpleUrlAuthenticationSuccessHandler
-	public AuthenticationSuccessHandler redirectionAfterAuthenticationSuccessHandler() {
-		return new RedirectionAfterAuthenticationSuccessHandler();
-	}
+	//public AuthenticationSuccessHandler redirectionAfterAuthenticationSuccessHandler() {
+	//	return new RedirectionAfterAuthenticationSuccessHandler();
+	//}
 
 }

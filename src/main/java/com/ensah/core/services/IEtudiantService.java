@@ -12,6 +12,4 @@ public interface IEtudiantService {
 	
 	public Etudiant getEtudiantById(Long idEudiant);
 	
-	
-	
 }

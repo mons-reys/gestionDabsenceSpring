@@ -5,8 +5,12 @@ package com.ensah.core.bo;
  * Purpose: Defines the Class Etudiant
  ***********************************************************************/
 
+
 import java.util.*;
 
+import javax.persistence.Entity;
+
+@Entity
 /** @pdOid 8f0686c1-ebf4-444c-b8b0-0abc8bed824f */
 public class Etudiant extends Utilisateur {
    /** @pdOid 978fdefe-9096-4e18-aedc-955e45f96847 */
